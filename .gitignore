@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+.venv/
+profile.md
+outputs/
+_check/

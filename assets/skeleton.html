@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{TITLE}}</title>
+<style>
+/*BASE_CSS*/
+</style>
+</head>
+<body>
+<!-- 顶栏：章节锚点 + 速览/完整切换；进度条由脚本按 .flow-bar 自动生成 -->
+<div class="topbar"><div class="wrap"><b>{{SHORT_TITLE}}</b>
+<nav class="nav" aria-label="章节"><a href="#flow">全场</a><!--TOPBAR_LINKS--><a href="#cross">串起来看</a><a href="#me">{{ME_LABEL}}</a></nav>
+<div class="mode" role="group" aria-label="阅读深度"><button type="button" data-mode="quick" aria-pressed="false">速览</button><button type="button" data-mode="full" aria-pressed="true">完整</button></div>
+</div><div class="strip" aria-hidden="true"></div></div>
+<div class="wrap">
+
+<!--HERO-->
+
+<div class="howto"><b>怎么读</b><span>右上角「速览」只留结论、图和“{{ME_LABEL}}”；「完整」保留全部细节</span><span class="if-raw">点任意时间，右侧打开原话并定位</span><span><span class="tag t-doubt">存疑</span>口述数字或未核验</span><span><span class="tag t-inf">推论</span>复盘者的判断</span><span><span class="tag t-view">观点</span>讲者的预测与主张</span></div>
+
+<!--FLOW-->
+
+<!--PARTS-->
+
+<!--CROSS-->
+
+<!--ME-->
+
+<footer><!--FOOTER--></footer>
+
+</div>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="转写原文" aria-hidden="true">
+<div class="dh"><div class="r1"><b>转写原文</b><small id="dcount"></small><button type="button" class="dx" id="dclose" aria-label="关闭">×</button></div>
+<input id="dq" type="search" placeholder="搜索原话或说话人" aria-label="搜索原话">
+<div class="dsegs" id="dsegs"></div>
+<div class="dinfo">原标签保留；说话人标签可能混人，以正文说明为准。加粗为该段主讲人，高亮为定位到的那一轮。</div></div>
+<div class="db" id="db"></div>
+</aside>
+<script id="raw-data" type="application/json">/*RAW*/</script>
+<script>
+/*APP_JS*/
+</script>
+</body>
+</html>

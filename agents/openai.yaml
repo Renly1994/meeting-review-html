@@ -1,0 +1,4 @@
+interface:
+  display_name: "会议复盘 HTML + Markdown"
+  short_description: "把录音或转写稿整理成可视化复盘 HTML，并同步输出适合个人知识库归档的完整纯文字 Markdown"
+  default_prompt: "使用 $meeting-review-html 把这份转写稿整理成复盘 HTML，并同时输出同名的纯文字 Markdown 归档稿。"
